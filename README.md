@@ -5,7 +5,24 @@
 **Live Repository**: [https://github.com/ncjpr04/kryoss](https://github.com/ncjpr04/kryoss)
 
 ---
+## ðŸ“¸ Application Screenshots
 
+### Login Page
+![Login Page](./frontend/public/image.png)
+
+### Register Page
+![Register Page](./frontend/public/image%20copy.png)
+
+### Contact List with Search & Sort
+![Contacts List](./frontend/public/image%20copy%202.png)
+
+### Add/Edit Contact Form
+![Contact Form](./frontend/public/image%20copy%203.png)
+
+### Contact Management Interface
+![Contact Management](./frontend/public/image%20copy%204.png)
+
+---
 ## ?? Project Overview
 
 This project is a complete implementation of a **Contacts Manager** web application built as part of a CRUD Web Developer Assignment. It allows users to manage their contacts (name, email, phone) with full authentication and advanced features.
@@ -298,42 +315,42 @@ npm run dev
 ```
 kryoss/
 +-- backend/
-¦   +-- prisma/
-¦   ¦   +-- migrations/          # Database migrations
-¦   ¦   +-- schema.prisma        # Database schema
-¦   +-- src/
-¦   ¦   +-- common/
-¦   ¦   ¦   +-- errors/          # Custom error classes
-¦   ¦   +-- config/              # Configuration files
-¦   ¦   +-- middleware/          # Express middleware
-¦   ¦   +-- modules/
-¦   ¦   ¦   +-- auth/            # Authentication module
-¦   ¦   ¦   +-- contacts/        # Contacts CRUD module
-¦   ¦   +-- routes/              # API routes
-¦   +-- .env.example             # Environment variables template
-¦   +-- package.json
-¦   +-- server.js                # Entry point
-¦
+ï¿½   +-- prisma/
+ï¿½   ï¿½   +-- migrations/          # Database migrations
+ï¿½   ï¿½   +-- schema.prisma        # Database schema
+ï¿½   +-- src/
+ï¿½   ï¿½   +-- common/
+ï¿½   ï¿½   ï¿½   +-- errors/          # Custom error classes
+ï¿½   ï¿½   +-- config/              # Configuration files
+ï¿½   ï¿½   +-- middleware/          # Express middleware
+ï¿½   ï¿½   +-- modules/
+ï¿½   ï¿½   ï¿½   +-- auth/            # Authentication module
+ï¿½   ï¿½   ï¿½   +-- contacts/        # Contacts CRUD module
+ï¿½   ï¿½   +-- routes/              # API routes
+ï¿½   +-- .env.example             # Environment variables template
+ï¿½   +-- package.json
+ï¿½   +-- server.js                # Entry point
+ï¿½
 +-- frontend/
     +-- src/
-    ¦   +-- app/                 # Next.js App Router pages
-    ¦   ¦   +-- login/
-    ¦   ¦   +-- register/
-    ¦   ¦   +-- layout.tsx
-    ¦   ¦   +-- page.tsx         # Home page
-    ¦   +-- components/          # React components
-    ¦   ¦   +-- ui/              # shadcn/ui components
-    ¦   ¦   +-- ContactForm.tsx
-    ¦   ¦   +-- ContactList.tsx
-    ¦   ¦   +-- DeleteDialog.tsx
-    ¦   ¦   +-- Pagination.tsx
-    ¦   ¦   +-- SearchBar.tsx
-    ¦   +-- contexts/            # React contexts
-    ¦   ¦   +-- AuthContext.tsx
-    ¦   +-- lib/                 # Utilities
-    ¦       +-- api.ts           # API client
-    ¦       +-- types.ts         # TypeScript types
-    ¦       +-- validations.ts   # Zod schemas
+    ï¿½   +-- app/                 # Next.js App Router pages
+    ï¿½   ï¿½   +-- login/
+    ï¿½   ï¿½   +-- register/
+    ï¿½   ï¿½   +-- layout.tsx
+    ï¿½   ï¿½   +-- page.tsx         # Home page
+    ï¿½   +-- components/          # React components
+    ï¿½   ï¿½   +-- ui/              # shadcn/ui components
+    ï¿½   ï¿½   +-- ContactForm.tsx
+    ï¿½   ï¿½   +-- ContactList.tsx
+    ï¿½   ï¿½   +-- DeleteDialog.tsx
+    ï¿½   ï¿½   +-- Pagination.tsx
+    ï¿½   ï¿½   +-- SearchBar.tsx
+    ï¿½   +-- contexts/            # React contexts
+    ï¿½   ï¿½   +-- AuthContext.tsx
+    ï¿½   +-- lib/                 # Utilities
+    ï¿½       +-- api.ts           # API client
+    ï¿½       +-- types.ts         # TypeScript types
+    ï¿½       +-- validations.ts   # Zod schemas
     +-- .env.local.example
     +-- package.json
     +-- tsconfig.json
