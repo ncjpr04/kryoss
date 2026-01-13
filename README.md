@@ -1,4 +1,4 @@
-# Contacts Manager - CRUD Web Developer Assignment
+﻿# Contacts Manager - CRUD Web Developer Assignment
 
 > **Assignment Submission**: A full-stack web application for managing contacts with CRUD operations, authentication, search, pagination, and sorting features.
 
@@ -23,53 +23,54 @@
 ![Contact Management](./frontend/public/image%20copy%204.png)
 
 ---
-## ?? Project Overview
+
+## 📋 Project Overview
 
 This project is a complete implementation of a **Contacts Manager** web application built as part of a CRUD Web Developer Assignment. It allows users to manage their contacts (name, email, phone) with full authentication and advanced features.
 
 ### Key Highlights
-- ? Full-stack application (Frontend + Backend + Database)
-- ? JWT-based authentication
-- ? RESTful API with Swagger documentation
-- ? Modern, responsive UI with TypeScript
-- ? PostgreSQL database with Prisma ORM
-- ? Production-ready code quality
+- ✅ Full-stack application (Frontend + Backend + Database)
+- ✅ JWT-based authentication
+- ✅ RESTful API with Swagger documentation
+- ✅ Modern, responsive UI with TypeScript
+- ✅ PostgreSQL database with Prisma ORM
+- ✅ Production-ready code quality
 
 ---
 
-## ? Features Implementation
+## ✅ Features Implementation
 
 ### Must Have Features (All Implemented)
 
 | Feature | Implementation | Status |
 |---------|---------------|--------|
-| **Create** | Add new contacts with validation | ? Complete |
-| **Read** | Display contact list and individual details | ? Complete |
-| **Update** | Edit existing contact information | ? Complete |
-| **Delete** | Remove contacts with confirmation dialog | ? Complete |
-| **Validation** | Email format, phone length, required fields | ? Complete |
-| **UI/UX** | Clean, modern interface with table and forms | ? Complete |
-| **Error Handling** | Clear messages (e.g., 'Email already exists') | ? Complete |
-| **Persistence** | PostgreSQL database with Prisma ORM | ? Complete |
-| **Documentation** | Comprehensive README with setup steps | ? Complete |
+| **Create** | Add new contacts with validation | ✅ Complete |
+| **Read** | Display contact list and individual details | ✅ Complete |
+| **Update** | Edit existing contact information | ✅ Complete |
+| **Delete** | Remove contacts with confirmation dialog | ✅ Complete |
+| **Validation** | Email format, phone length, required fields | ✅ Complete |
+| **UI/UX** | Clean, modern interface with table and forms | ✅ Complete |
+| **Error Handling** | Clear messages (e.g., 'Email already exists') | ✅ Complete |
+| **Persistence** | PostgreSQL database with Prisma ORM | ✅ Complete |
+| **Documentation** | Comprehensive README with setup steps | ✅ Complete |
 
 ### Bonus Features (Implemented)
 
 | Feature | Implementation | Status |
 |---------|---------------|--------|
-| **Search/Filter** | Search by name or email (real-time) | ? Complete |
-| **Pagination** | Server-side pagination | ? Complete |
-| **Sorting** | Sort by name, email, or date (asc/desc) | ? Complete |
-| **Authentication** | JWT-based user authentication | ? Complete |
-| **TypeScript** | Full TypeScript support on frontend | ? Complete |
-| **API Documentation** | Swagger/OpenAPI documentation | ? Complete |
-| **Unit Tests** | - | ? Planned |
-| **Docker Support** | Dockerfile + docker-compose | ? Planned |
-| **CI/CD** | GitHub Actions for lint/test | ? Planned |
+| **Search/Filter** | Search by name or email (real-time) | ✅ Complete |
+| **Pagination** | Server-side pagination | ✅ Complete |
+| **Sorting** | Sort by name, email, or date (asc/desc) | ✅ Complete |
+| **Authentication** | JWT-based user authentication | ✅ Complete |
+| **TypeScript** | Full TypeScript support on frontend | ✅ Complete |
+| **API Documentation** | Swagger/OpenAPI documentation | ✅ Complete |
+| **Unit Tests** | - | ⏳ Planned |
+| **Docker Support** | Dockerfile + docker-compose | ⏳ Planned |
+| **CI/CD** | GitHub Actions for lint/test | ⏳ Planned |
 
 ---
 
-## ??? Technology Stack
+## 🛠️ Technology Stack
 
 ### Backend
 - **Runtime**: Node.js v18+
@@ -93,7 +94,7 @@ This project is a complete implementation of a **Contacts Manager** web applicat
 
 ---
 
-## ?? API Documentation
+## 🌐 API Documentation
 
 ### Base URL
 ```
@@ -128,7 +129,7 @@ Visit **http://localhost:4000/api-docs** for Swagger UI with full API documentat
 
 ---
 
-## ??? Database Schema
+## 🗄️ Database Schema
 
 ### User Table
 ```sql
@@ -161,7 +162,7 @@ CREATE INDEX "Contact_userId_idx" ON "Contact"(userId);
 
 ---
 
-## ?? Installation & Setup
+## 📦 Installation & Setup
 
 ### Prerequisites
 - Node.js >= 18.x
@@ -221,7 +222,7 @@ Frontend will be available at: **http://localhost:3000**
 
 ---
 
-## ?? Running the Application
+## 🚀 Running the Application
 
 ### Development Mode
 
@@ -244,7 +245,7 @@ npm run dev
 
 ---
 
-## ?? Usage Guide
+## 📖 Usage Guide
 
 ### 1. Register a New Account
 1. Navigate to http://localhost:3000
@@ -286,7 +287,7 @@ npm run dev
 
 ---
 
-## ?? Testing
+## 🧪 Testing
 
 ### Manual Testing Checklist
 - [x] User registration with validation
@@ -310,55 +311,55 @@ npm run dev
 
 ---
 
-## ?? Project Structure
+## 📁 Project Structure
 
 ```
 kryoss/
-+-- backend/
-�   +-- prisma/
-�   �   +-- migrations/          # Database migrations
-�   �   +-- schema.prisma        # Database schema
-�   +-- src/
-�   �   +-- common/
-�   �   �   +-- errors/          # Custom error classes
-�   �   +-- config/              # Configuration files
-�   �   +-- middleware/          # Express middleware
-�   �   +-- modules/
-�   �   �   +-- auth/            # Authentication module
-�   �   �   +-- contacts/        # Contacts CRUD module
-�   �   +-- routes/              # API routes
-�   +-- .env.example             # Environment variables template
-�   +-- package.json
-�   +-- server.js                # Entry point
-�
-+-- frontend/
-    +-- src/
-    �   +-- app/                 # Next.js App Router pages
-    �   �   +-- login/
-    �   �   +-- register/
-    �   �   +-- layout.tsx
-    �   �   +-- page.tsx         # Home page
-    �   +-- components/          # React components
-    �   �   +-- ui/              # shadcn/ui components
-    �   �   +-- ContactForm.tsx
-    �   �   +-- ContactList.tsx
-    �   �   +-- DeleteDialog.tsx
-    �   �   +-- Pagination.tsx
-    �   �   +-- SearchBar.tsx
-    �   +-- contexts/            # React contexts
-    �   �   +-- AuthContext.tsx
-    �   +-- lib/                 # Utilities
-    �       +-- api.ts           # API client
-    �       +-- types.ts         # TypeScript types
-    �       +-- validations.ts   # Zod schemas
-    +-- .env.local.example
-    +-- package.json
-    +-- tsconfig.json
+├── backend/
+│   ├── prisma/
+│   │   ├── migrations/          # Database migrations
+│   │   └── schema.prisma        # Database schema
+│   ├── src/
+│   │   ├── common/
+│   │   │   └── errors/          # Custom error classes
+│   │   ├── config/              # Configuration files
+│   │   ├── middleware/          # Express middleware
+│   │   ├── modules/
+│   │   │   ├── auth/            # Authentication module
+│   │   │   └── contacts/        # Contacts CRUD module
+│   │   └── routes/              # API routes
+│   ├── .env.example             # Environment variables template
+│   ├── package.json
+│   └── server.js                # Entry point
+│
+└── frontend/
+    ├── src/
+    │   ├── app/                 # Next.js App Router pages
+    │   │   ├── login/
+    │   │   ├── register/
+    │   │   ├── layout.tsx
+    │   │   └── page.tsx         # Home page
+    │   ├── components/          # React components
+    │   │   ├── ui/              # shadcn/ui components
+    │   │   ├── ContactForm.tsx
+    │   │   ├── ContactList.tsx
+    │   │   ├── DeleteDialog.tsx
+    │   │   ├── Pagination.tsx
+    │   │   └── SearchBar.tsx
+    │   ├── contexts/            # React contexts
+    │   │   └── AuthContext.tsx
+    │   └── lib/                 # Utilities
+    │       ├── api.ts           # API client
+    │       ├── types.ts         # TypeScript types
+    │       └── validations.ts   # Zod schemas
+    ├── .env.local.example
+    ├── package.json
+    └── tsconfig.json
 ```
 
 ---
 
-## ?? Environment Variables
+## ⚙️ Environment Variables
 
 ### Backend (.env)
 ```env
@@ -377,30 +378,30 @@ NEXT_PUBLIC_API_URL=http://localhost:4000/api/v1
 
 ---
 
-## ?? Evaluation Criteria Coverage
+## 📊 Evaluation Criteria Coverage
 
 | Criteria | Points | Score | Details |
 |----------|--------|-------|---------|
-| **Code Quality** | 25 | 25/25 | ? Modular architecture, separation of concerns, TypeScript, proper error handling, code comments |
-| **API/Backend Design** | 25 | 25/25 | ? RESTful design, Swagger docs, validation, authentication, error responses |
-| **Frontend UX** | 20 | 20/20 | ? Modern responsive UI, intuitive navigation, loading states, error feedback, toast notifications |
-| **Testing** | 10 | 6/10 | ?? Manual testing complete, automated tests pending |
-| **Documentation** | 10 | 10/10 | ? Comprehensive README, API docs, inline comments, setup instructions |
-| **Performance & Edge Cases** | 10 | 10/10 | ? Pagination, duplicate validation, error handling, input sanitization |
+| **Code Quality** | 25 | 25/25 | ✅ Modular architecture, separation of concerns, TypeScript, proper error handling, code comments |
+| **API/Backend Design** | 25 | 25/25 | ✅ RESTful design, Swagger docs, validation, authentication, error responses |
+| **Frontend UX** | 20 | 20/20 | ✅ Modern responsive UI, intuitive navigation, loading states, error feedback, toast notifications |
+| **Testing** | 10 | 6/10 | ⚠️ Manual testing complete, automated tests pending |
+| **Documentation** | 10 | 10/10 | ✅ Comprehensive README, API docs, inline comments, setup instructions |
+| **Performance & Edge Cases** | 10 | 10/10 | ✅ Pagination, duplicate validation, error handling, input sanitization |
 | **TOTAL** | **100** | **96/100** | **Excellent** |
 
 ---
 
-## ?? Assignment Deliverables
+## 🎯 Assignment Deliverables
 
-### ? Completed Deliverables
+### ✅ Completed Deliverables
 
 1. **Source Code**
    - GitHub Repository: https://github.com/ncjpr04/kryoss
    - Full commit history with meaningful messages
    - Clean, production-ready code
 
-2. **README Documentation** ?
+2. **README Documentation** ✅
    - Comprehensive setup instructions
    - API documentation
    - Usage guide
@@ -411,7 +412,7 @@ NEXT_PUBLIC_API_URL=http://localhost:4000/api/v1
    - Can be deployed to Vercel (frontend) + Render/Railway (backend)
    - Database can use Neon Tech PostgreSQL
 
-4. **Technical Discussion Ready** ?
+4. **Technical Discussion Ready** ✅
    - Architecture decisions documented
    - Database schema explained
    - API design rationale
@@ -421,20 +422,20 @@ NEXT_PUBLIC_API_URL=http://localhost:4000/api/v1
 
 ---
 
-## ?? Security Features
+## 🔐 Security Features
 
-- ? Password hashing with bcrypt
-- ? JWT token-based authentication
-- ? CORS protection
-- ? Helmet security headers
-- ? Rate limiting to prevent abuse
-- ? Input validation on client and server
-- ? SQL injection prevention (Prisma ORM)
-- ? XSS protection
+- ✅ Password hashing with bcrypt
+- ✅ JWT token-based authentication
+- ✅ CORS protection
+- ✅ Helmet security headers
+- ✅ Rate limiting to prevent abuse
+- ✅ Input validation on client and server
+- ✅ SQL injection prevention (Prisma ORM)
+- ✅ XSS protection
 
 ---
 
-## ?? Future Enhancements
+## 🚧 Future Enhancements
 
 - [ ] Unit tests with Jest
 - [ ] Integration tests with Supertest
@@ -449,7 +450,7 @@ NEXT_PUBLIC_API_URL=http://localhost:4000/api/v1
 
 ---
 
-## ?? Troubleshooting
+## 🐛 Troubleshooting
 
 ### Database Connection Issues
 ```bash
@@ -487,7 +488,7 @@ npx prisma studio
 
 ---
 
-## ????? Developer
+## 👨‍💻 Developer
 
 **Name**: Nitin Choudhary  
 **Email**: nitinchoudhary22112004@gmail.com  
@@ -496,13 +497,13 @@ npx prisma studio
 
 ---
 
-## ?? License
+## 📄 License
 
 MIT License - This project is submitted as an assignment and is available for review and evaluation.
 
 ---
 
-## ?? Acknowledgments
+## 🙏 Acknowledgments
 
 - **Next.js** - React framework
 - **Prisma** - Database ORM
@@ -513,7 +514,7 @@ MIT License - This project is submitted as an assignment and is available for re
 
 ---
 
-## ?? Support
+## 📞 Support
 
 For questions or technical discussion about this assignment:
 - **Email**: nitinchoudhary22112004@gmail.com
@@ -521,6 +522,6 @@ For questions or technical discussion about this assignment:
 
 ---
 
-**Assignment Status**: ? Complete and Ready for Review  
+**Assignment Status**: ✅ Complete and Ready for Review  
 **Submission Date**: January 13, 2026  
 **Estimated Score**: 96/100
